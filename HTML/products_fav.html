@@ -12,32 +12,5 @@
     <h1>Your Favorite Products ❤️</h1>
     <div id="favorites-container"></div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let favoriteProducts = JSON.parse(localStorage.getItem("favorites")) || [];
-            let container = document.getElementById("favorites-container");
-
-            if (favoriteProducts.length === 0) {
-                container.innerHTML = "<p>No favorite products yet!</p>";
-            } else {
-                favoriteProducts.forEach(product => {
-                    let productCard = document.createElement("div");
-                    productCard.classList.add("card");
-                    productCard.innerHTML = `
-                        <div class="image">
-                            <img src="${product.image}" alt="${product.title}">
-                        </div>
-                        <div class="products_text">
-                            <h2>${product.title}</h2>
-                            <p>${product.description}</p>
-                            <h3>${product.price}</h3>
-                        </div>
-                    `;
-                    container.appendChild(productCard);
-                });
-            }
-        });
-    </script>
-
 </body>
 </html>

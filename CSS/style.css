@@ -287,15 +287,16 @@ section .main .button:hover i{
 .about{
     width: 100%;
     height: 100vh;
-    padding: 35px 0;
-    margin-bottom: 50px;
+    padding: 35px 0 0 0;
+    margin-bottom: 0;
 }
 
 .about h1{
     font-size: 60px;
-    margin-top: 25px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     background: black;
     -webkit-background-clip: text;
@@ -312,12 +313,13 @@ section .main .button:hover i{
 
 .about .about_main{
     position: relative;
-    top: 40%;
-    left: 50%;
+    top: 35%;
+    left: 50%;   
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 
 .about .about_main .about_image{

@@ -4,21 +4,21 @@ function setPic(pic_path)
 }
 
 
-function heart_clicked(objname, card_id) 
+function heart_clicked(objname) 
 {
     const card_fav = document.getElementById(objname);
-    const card = document.getElementById(card_id).innerHTML;
 
     if(card_fav.style.color != 'red')
     {
         card_fav.style.color = 'red';
-        localStorage.setItem('div_card', card);
-        //window.location.href = 'products_fav.html';
     }
     else if(card_fav.style.color == 'red')
         card_fav.style.color = 'black';
-    
 }
+
+
+
+
 
 // Fav_Page
 document.addEventListener("DOMContentLoaded", function () {
@@ -56,4 +56,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    let favoriteProducts = JSON.parse(localStorage.getItem("favorites")) || [];
+    let container = document.getElementById("favorites-container");
 
+    if (favoriteProducts.length === 0) {
+        container.innerHTML = "<p>No favorite products yet!</p>";
+    } else {
+        favoriteProducts.forEach(product => {
+            let productCard = document.createElement("div");
+            productCard.classList.add("card");
+            productCard.innerHTML = `
+                <div class="image">
+                    <img src="${product.image}" alt="${product.title}">
+                </div>
+                <div class="products_text">
+                    <h2>${product.title}</h2>
+                    <p>${product.description}</p>
+                    <h3>${product.price}</h3>
+                </div>
+            `;
+            container.appendChild(productCard);
+        });
+    }
+});
