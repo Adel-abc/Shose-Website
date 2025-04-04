@@ -20,7 +20,7 @@
             </div>
             <ul>
                 <li><a class="wordsnav" href="#Home">Home</a></li>
-                <li><a class="wordsnav" href="#Products">Products</a></li>
+                <li><a class="wordsnav" href="#Product">Products</a></li>
                 <li><a class="wordsnav" href="#About">About</a></li>
                 <li><a class="wordsnav" href="#Review">Review</a></li>
                 <li><a class="wordsnav" href="#Services">Servises</a></li>
@@ -60,24 +60,21 @@
         </div>
     </section>
 
-    <div id="Products" class="products">
+    <div id="Product" class="products">
         <h1>Products</h1>
         <div class="box">
-            <div class="card" id="card1">
-
+            <div class="card" id="1card">
                 <div class="small_card">
-                    <i id="cadr_heart_icon1" onclick="heart_clicked('cadr_heart_icon1', 'card1')" class="fa-solid fa-heart"></i>
+                    <i id="cadr_heart_icon1" class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-share"></i>
                 </div>
-
                 <div class="image">
                     <img src="../Images/shoes1.png">
                 </div>
-
                 <div class="products_text">
                     <h2>NIKE</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, saepe?</p>
-                    <h3>$100</h3>
+                    <h3 id="price">$100</h3>
                     <div class="products_star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -85,14 +82,14 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Add To Card</a>
+                    <a href="#" class="btn" onclick="moveToCard('1card')">Add To Card</a>
                 </div>
             </div>
 
-            <div class="card" id="card2">
+            <div class="card" id="2card">
 
                 <div class="small_card">
-                    <i id="cadr_heart_icon2" onclick="heart_clicked('cadr_heart_icon2', 'card2')" class="fa-solid fa-heart"></i>
+                    <i id="cadr_heart_icon2" class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-share"></i>
                 </div>
 
@@ -111,14 +108,14 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Add To Card</a>
+                    <a href="#" class="btn" onclick="moveToCard('2card')">Add To Card</a>
                 </div>
             </div>
 
-            <div class="card" id="card3">
+            <div class="card" id="3card">
 
                 <div class="small_card">
-                    <i id="cadr_heart_icon3" onclick="heart_clicked('cadr_heart_icon3', 'card3')" class="fa-solid fa-heart"></i>
+                    <i id="cadr_heart_icon3" class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-share"></i>
                 </div>
 
@@ -137,14 +134,14 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Add To Card</a>
+                    <a href="#" class="btn" onclick="moveToCard('3card')">Add To Card</a>
                 </div>
             </div>
 
-            <div class="card" id="card4">
+            <div class="card" id="4card">
 
                 <div class="small_card">
-                    <i id="cadr_heart_icon4" onclick="heart_clicked('cadr_heart_icon4', 'card4')" class="fa-solid fa-heart"></i>
+                    <i id="cadr_heart_icon4" class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-share"></i>
                 </div>
 
@@ -163,14 +160,14 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Add To Card</a>
+                    <a href="#" class="btn" onclick="moveToCard('4card')">Add To Card</a>
                 </div>
             </div>
 
-            <div class="card" id="card5">
+            <div class="card" id="5card">
 
                 <div class="small_card">
-                    <i id="cadr_heart_icon5" onclick="heart_clicked('cadr_heart_icon5', 'card5')" class="fa-solid fa-heart"></i>
+                    <i id="cadr_heart_icon5" class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-share"></i>
                 </div>
 
@@ -189,14 +186,14 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Add To Card</a>
+                    <a href="#" class="btn" onclick="moveToCard('5card')">Add To Card</a>
                 </div>
             </div>
 
-            <div class="card" id="card6">
+            <div class="card" id="6card">
 
                 <div class="small_card">
-                    <i id="cadr_heart_icon6" onclick="heart_clicked('cadr_heart_icon6', 'card6')" class="fa-solid fa-heart"></i>
+                    <i id="cadr_heart_icon6" class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-share"></i>
                 </div>
 
@@ -215,14 +212,14 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Add To Card</a>
+                    <a href="#" class="btn" onclick="moveToCard('6card')">Add To Card</a>
                 </div>
             </div>
 
-            <div class="card"  id="card7">
+            <div class="card"  id="7card">
 
                 <div class="small_card">
-                    <i id="cadr_heart_icon7" onclick="heart_clicked('cadr_heart_icon7', 'card7')" class="fa-solid fa-heart"></i>
+                    <i id="cadr_heart_icon7" class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-share"></i>
                 </div>
 
@@ -241,14 +238,14 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Add To Card</a>
+                    <a href="#" class="btn" onclick="moveToCard('7card')">Add To Card</a>
                 </div>
             </div>
 
-            <div class="card" id="card8">
+            <div class="card" id="8card">
 
                 <div class="small_card">
-                    <i id="cadr_heart_icon8" onclick="heart_clicked('cadr_heart_icon8', 'card8')" class="fa-solid fa-heart"></i>
+                    <i id="cadr_heart_icon8" class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-share"></i>
                 </div>
 
@@ -267,7 +264,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Add To Card</a>
+                    <a href="#" class="btn" onclick="moveToCard('8card')">Add To Card</a>
                 </div>
             </div>
         </div>
@@ -524,7 +521,7 @@
                 <p>User Name</p>
                 <div class="user">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" name="user" id="" placeholder="User Name" class="user_name">
+                    <input type="text" name="user" id="username" placeholder="User Name" class="user_name">
                 </div>
 
                 <p class="Password_tag">Password</p>
